@@ -14,7 +14,7 @@ from glob import glob
 import torch
 
 # Configure streamlit layout
-st.title("Transformer Inference App")
+st.title("Global Language Bridge")
 
 models=[os.path.basename(pth) for pth in glob(os.path.join(models_dir_pth,'*.pt'))]
 tokenizers=[os.path.basename(pth) for pth in glob(os.path.join(models_dir_pth,'*.json'))]
@@ -34,7 +34,7 @@ d_ff=st.sidebar.number_input("d_ff", step=int(), value=2048)
 device=st.sidebar.radio("Device", ("CPU", "GPU"))
 
 
-@st.cache
+@st.cache_data
 def load_models(model_pth):
 
     # Load the model from checkpoint

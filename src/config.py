@@ -1,7 +1,7 @@
 unofficial_single_gpu_config=dict(
     # RUN CONFIG:
-    RUN_NAME='unofficial_single_gpu_run',
-    RUN_DESCRIPTION='Default run on GPU, 10GB of VRAM needed for this.',
+    RUN_NAME='test_run_1',
+    RUN_DESCRIPTION='Default run on GPU, 6 GB dedicated VRAM and 13 gb shared VRAM.',
     RUNS_FOLDER_PTH='../runs',
     # DATA CONFIG:
     DATASET_SIZE=300000,

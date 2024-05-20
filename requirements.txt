@@ -1,0 +1,4 @@
+streamlit
+wandb
+torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+tokenizers
